@@ -1,6 +1,6 @@
 # LLM Determinism Explorer
 
-An interactive React application that demonstrates and explains nondeterminism in Large Language Model (LLM) inference, based on the research "Defeating Nondeterminism in LLM Inference" by Thinking Machines Lab.
+An interactive React application that demonstrates and explains nondeterminism in Large Language Model (LLM) inference, based on the research ["Defeating Nondeterminism in LLM Inference"](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/) by Thinking Machines Lab.
 
 ## Features
 

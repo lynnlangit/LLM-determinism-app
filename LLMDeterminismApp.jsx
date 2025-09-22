@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
-
 const LLMDeterminismApp = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-  const [isDeterministic, setIsDeterministic] = useState(false);
-  const [floatA, setFloatA] = useState(0.1);
-  const [floatB, setFloatB] = useState(0.2);
-  const [floatC, setFloatC] = useState(0.3);
-  const [batchSize, setBatchSize] = useState(2);
-  const [kernelType, setKernelType] = useState('RMSNorm');
-  const [demoRuns, setDemoRuns] = useState([]);
-  const [isRunningDemo, setIsRunningDemo] = useState(false);
+  const [activeTab, setActiveTab] = React.useState('overview');
+  const [isDeterministic, setIsDeterministic] = React.useState(false);
+  const [floatA, setFloatA] = React.useState(0.1);
+  const [floatB, setFloatB] = React.useState(0.2);
+  const [floatC, setFloatC] = React.useState(0.3);
+  const [batchSize, setBatchSize] = React.useState(2);
+  const [kernelType, setKernelType] = React.useState('RMSNorm');
+  const [demoRuns, setDemoRuns] = React.useState([]);
+  const [isRunningDemo, setIsRunningDemo] = React.useState(false);
 
   const tabs = [
     { id: 'overview', label: 'Overview' },
@@ -837,4 +835,5 @@ model = AutoModelForCausalLM.from_pretrained(
   );
 };
 
-export default LLMDeterminismApp;
+// Export for browser use
+window.LLMDeterminismApp = LLMDeterminismApp;
