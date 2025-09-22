@@ -1,5 +1,22 @@
 # LLM Determinism Explorer
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="images/det.png" alt="Deterministic Output" width="400"/>
+        <br/>
+        <strong>Deterministic Mode</strong>
+      </td>
+      <td align="center">
+        <img src="images/non-det.png" alt="Non-Deterministic Output" width="400"/>
+        <br/>
+        <strong>Non-Deterministic Mode</strong>
+      </td>
+    </tr>
+  </table>
+</div>
+
 An interactive React application that demonstrates and explains nondeterminism in Large Language Model (LLM) inference, based on the research ["Defeating Nondeterminism in LLM Inference"](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/) by Thinking Machines Lab.
 
 ## Features
