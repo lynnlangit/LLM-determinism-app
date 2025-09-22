@@ -28,10 +28,14 @@ This single-page application explores why LLMs like Google's Gemma produce diffe
 ## Quick Start
 
 1. **Clone or download** this repository
-2. **Open `index.html`** in a modern web browser
-3. **Explore the tabs** to learn about LLM nondeterminism
+2. **Start a local HTTP server** in the project directory:
+   ```bash
+   python3 -m http.server 8000
+   ```
+3. **Open your browser** and go to `http://localhost:8000`
+4. **Explore the tabs** to learn about LLM nondeterminism
 
-That's it! No build process or dependencies required.
+Note: A local server is required to avoid CORS issues when loading the JSX component file.
 
 ## File Structure
 
@@ -78,6 +82,7 @@ LLM-determinism-app/
 
 - **Single-file React component** with inline styles
 - **No external CSS dependencies**
+- **Uses React from CDN** with Babel for JSX transformation
 - **Responsive grid layouts**
 - **Color-coded status indicators**
 - **Realistic simulation delays**
@@ -100,11 +105,17 @@ Based on "Defeating Nondeterminism in LLM Inference" research demonstrating:
 ## Development
 
 To modify the application:
-1. Edit `LLMDeterminismApp.jsx`
-2. Refresh `index.html` in your browser
-3. Changes will be reflected immediately
+1. **Start the development server**: `python3 -m http.server 8000`
+2. **Edit `LLMDeterminismApp.jsx`** (uses React hooks, no ES6 imports)
+3. **Refresh your browser** at `http://localhost:8000`
+4. Changes will be reflected immediately
 
 The component uses React hooks for state management and includes hover effects, animations, and interactive simulations.
+
+### Technical Notes
+- The JSX file has been modified to work with Babel standalone in the browser
+- React imports have been replaced with global `React.useState` calls
+- Component is exported to `window.LLMDeterminismApp` for browser compatibility
 
 ## License
 
