@@ -4,7 +4,7 @@ An interactive React application that demonstrates and explains nondeterminism i
 
 ## Features
 
-This single-page application explores why LLMs like Google's Gemma produce different outputs even at temperature=0, and provides practical solutions for achieving determinism.
+This single-page application explores why LLMs such as [Google's Gemma](https://deepmind.google/models/gemma/) produce different outputs even at temperature=0, and provides practical solutions for achieving determinism.
 
 ### Interactive Demonstrations
 
